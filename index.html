@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 14</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El rey Midas
+                <br><br>
+                Había una vez un rey en la ciudad de Frigia, que poseía una gran cantidad de oro, inclusive algunas personas aseguraban que era el hombre con más oro en el mundo. Sin embargo, pese a su gran riqueza, él continuaba acumulando y acumulando más dinero, pero había algo que le quitaba, inclusive, aún más el sueño que su propia riqueza: su hija Zoe, pues quería que esta se convirtiera en la más rica del mundo.
+                <br><br>
+                Zoe, su hija, era una joven hermosa, simpática, sencilla y amable. Todo lo contrario a su padre. Además, sus intereses estaban muy distantes a los de su padre, pues para ella su felicidad era su hermoso jardín, las flores que había en él y la tranquilidad que le transmitía este lugar.
+                <br><br>
+                Un día el rey Midas se encontraba en la habitación donde tenía todo su oro guardado, cuando de repente apareció un extraño hombre con un impecable traje blanco, se trataba de Sileno, el dios de la riqueza. Sileno se acercó cautelosamente a Midas, el cual se encontraba estupefacto, y le dijo: "Rey Midas, yo puedo ofrecerte aún más oro del que tienes". Midas, algo asustado aún, le respondió: "Tú, dios de la riqueza, ¿Por qué no me concedes mejor un deseo?". Sileno al ver en los ojos de Midas la ambición y los deseos de poseer más dinero, no dudó en aceptar su petición, a lo que le contestó: "Está bien Midas, todo lo que toques se convertirá en oro inmediatamente". Midas, con una sonrisa de oreja a oreja, se despide muy agradecido de Sileno y marcha a dormir.
+                <br><br>
+                Al día siguiente, el rey Midas comenzó a tocar en toda la habitación los objetos que deseaba convertir en oro, para así poseer aún más riquezas. Sin embargo, para su desgracia, cuando se dirigió hacia el comedor para desayunar, se llevó una gran sorpresa… "¡Toda mi comida se ha convertido en oro!" exclamó Midas con gran tristeza. Toda la comida que cogía con sus manos y la que rozaba sus labios se convertía en oro, impidiendo que la más mínima gota de agua pudiera llegar a su estómago.
+                <br><br>
+                Pasaron algunos días y el rey se encontraba aún sin siquiera probar un bocado de comida, por lo cual su sueño y sus intereses comenzaron a destruirse. El oro ya no era más su ilusión, pues ahora, un bocado de comida era lo que él más deseaba. Midas, al verse en esta situación, grita entre lágrimas: "¿Pasaré así el resto de mis días?" Su hija, Zoe, lo escucha desde el jardín y va corriendo hacia él. Al verlo llorar desconsoladamente, ella también parte en llanto, y decidió darle un abrazo, el rey no tuvo tiempo de reaccionar y convirtió a su más preciado tesoro en una gran estatua de oro.
+                <br><br>
+                Midas, en su desespero, levanta los brazos y suplica a Sileno: "Oh, dios Sileno, ya no quiero el oro…El que tenía era suficiente. No quiero seguir así. Quiero tocar las flores, abrazar a mi hija, acariciar a mi gata, sentir el perfume de mis rosas y comer tranquilamente con mis seres queridos… ¡Por favor, quítame esta horrible maldición!".
+                <br><br>
+                Sileno, al ver la desesperación y la sinceridad en los ojos de Midas, no duda un segundo en aceptar su petición, contestándole: "Midas, aceptaré tu petición porque en tus ojos veo sinceridad y arrepentimiento, sin embargo, para poder volver a la normalidad todas aquellas cosas que convertiste en oro, tendrás que dirigirte al río Nusman y sumergir todo aquello levemente en el río".
+                <br><br>
+                Hecho esto, Midas corre de inmediato a abrazar a su hermosa hija Zoe y a disfrutar de las flores en el jardín. A la noche, justo antes de conciliar el sueño, Midas se dice a sí mismo: "Ni todo el oro, ni el dinero del mundo podrá comprar la felicidad que me da estar contigo".
+                <br><br>
+                Anónimo - 647 palabras
+            </p>                  
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
